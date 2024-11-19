@@ -1,5 +1,5 @@
 from setuptools import setup
-
+from pathlib import Path
 setup(
     name='jsnDB',
     description="A lighweight JSON-BASED database",
