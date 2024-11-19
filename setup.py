@@ -1,14 +1,16 @@
-from setuptools import setup
-from pathlib import Path
+from setuptools import setup, find_packages
+
 setup(
     name='jsnDB',
-    description="A lighweight JSON-BASED database",
-    version="1.0.0",
-    license="Apache License 2.0",
-    url='https://github.com/dracxi/jsnDB',
-    author='DracX',
-    author_email='dracx.py@gmail.com',
-    py_modules=['jsnDB'],
-    long_description=Path("README.md").read_text(),
-    long_description_content_type="text/markdown",
+    version='1.0.0',
+    packages=find_packages(),
+    description='A lightweight JSON-based database.',
+    long_description=open('README.md').read(),
+    long_description_content_type='text/markdown',
+    classifiers=[
+        'Programming Language :: Python :: 3',
+        'License :: OSI Approved :: MIT License',
+        'Operating System :: OS Independent',
+    ],
+    python_requires='>=3.6',
 )
