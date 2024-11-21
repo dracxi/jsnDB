@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='jsnDB',
-    version='1.0.0',
+    version='1.0.2',
     packages=find_packages(),
     description='A lightweight JSON-based database.',
     long_description=open('README.md').read(),
